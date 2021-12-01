@@ -1,0 +1,101 @@
+<section style="margin:50px 0px" class="col-12 col-s-12 col-md-12 col-lg-12">  
+        <div style="width:500px" class="parte sombra">
+        <img style="margin:10px 100px 0px" src="Public/images/logoContactamos.png" alt="Cargando...">
+        <h1>Inicio de sesión</h1>
+            <form action="Inicio/Vista/index.php" method="POST">
+                <label for="Usuario" class="labels"><i class='fas fa-user-alt'></i> Usuario</label> <br>
+                <input type="text" name="Usuario" required="" autocomplete="off" placeholder="Usuario" class="entrada"> <br> <br>
+                <label for="Contrasena" class="labels"><i class='fas fa-key'></i> Contraseña</label> <br>
+                <input type="password" name="Contrasena" required="" autocomplete="off" placeholder="Contraseña" class="entrada">
+                <input type="submit" value="Iniciar Sesión" class="boton2">
+            </form>
+        </div>
+    </section> 
+
+
+//estilo.css//
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    background-image: url('../images/fondoNetflix.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;   
+    background-repeat: no-repeat; 
+}
+
+section{
+    padding: 20px;
+}
+
+h1{
+    padding: 20px;
+    text-align: center;
+}
+
+i{
+    padding: 0 6px;
+    margin: 0px 2px;
+    color: #000;
+}
+
+header p a:hover{
+    color: #666;
+}
+
+/*clases*/ 
+
+.parte{
+    padding: 15px;
+    width: 500px;
+    margin: 16px auto;
+    border-radius: 4px;
+    color: #000;   
+    background-color: #ccc;
+}
+
+.entrada{
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 13px auto;
+    border: 1px solid #666;
+    font-size: 18px;
+    color: #000;
+}
+
+.boton2{
+    width: 200px;
+    background: #000;
+    border: none;
+    padding: 8px;
+    color: white;
+    margin: 16px 145px;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.boton2:hover{
+    background-color:#00C968;
+}
+
+.sombra{
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+}
+
+.labels{
+    text-align: justify;
+}
+
+.imgCenter{
+    margin: 25px auto;
+}
+

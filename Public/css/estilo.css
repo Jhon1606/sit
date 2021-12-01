@@ -1,0 +1,979 @@
+:root {
+    --primario: #784d3c;
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #ccc;
+    --grisclaro: #e8e8e8;
+    --grisOscuro: #666;
+    --gris: #D0D3D4;
+    --verde: #0f9d58;
+    --verdeSuave: #00C968; 
+    --verdeclaro: #D5F5E3;
+    --rojo: red;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;    
+}
+
+@media (min-width: 1024px){
+    body{
+       padding-left: 25rem;
+    }
+}
+
+/* GLOBALES */
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    /*width: min(90%, 120rem) */
+    margin: 4rem auto;
+}
+
+/* GLOBALES*/
+
+img{
+    width: 100%;
+}
+
+h1{
+    color: var(--verde);
+    line-height: 1;
+}
+
+h2{
+    color: var(--verde);
+    font-weight: 400;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.5;
+}
+
+i{
+    padding-right: .5rem;
+}
+
+.w100{
+    width: 100%;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.red{
+    color: var(--rojo);
+}
+
+.header--texto--blanco{
+    color: var(--blanco);
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.icono{
+    font-size: 2rem;
+    color: var(--verde);
+    padding-left: 1rem; 
+}
+
+.iconoGris{
+    font-size: 2rem;
+    color: var(--grisOscuro);
+    padding-left: 1rem; 
+}
+
+/*HEADER */
+
+.header,
+.header--conocenos,
+.header--seleccion,
+.header--ingreso,
+.header--nomina,
+.header--retiro,
+.header--seguridad,
+.header--talento,
+.header--contraloria,
+.header--buzon{
+    background-image: url(../imagenes/Contactamos18.JPG);
+    background-size: cover;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    height: 60rem;
+    position: relative;
+}
+
+.flex,
+.flex--conocenos{
+    background-color: rgba(251, 252, 252, .5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor--flex{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.imagenContactamos{
+    width: 100%;
+}
+
+.contenedor--texto,
+.contenedor--texto--inicio{
+    text-align: center;
+    margin: 0 auto;
+    width: 65%;
+}
+
+.contenedor--texto--inicio{
+    width: 100%;
+}
+
+/*NAVEGACION */
+
+.navegacion--none{
+    display: none;
+}
+
+.navegacion--block{
+    display: block;
+}
+
+@media (min-width: 1024px){
+    .navegacion--none{
+        display: block;
+    }
+}
+
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 25rem;
+    background-color: var(--negro);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 4rem 3rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.navegacion::-webkit-scrollbar {
+    width: 0;
+}
+
+.navegacion__enlace,
+.navegacion__parrafo{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    color: var(--blanco);
+}
+
+.navegacion__parrafo{
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--verde); 
+    border-bottom: 1px solid var(--verde);
+}
+
+.active,
+.navegacion__enlace:hover{
+    color: var(--verdeSuave);
+}
+
+.texto--usuario,
+.enlace--usuario{
+    color: var(--blanco);
+    font-size: 1rem;
+    text-align: right;
+}
+
+.enlace--usuario{
+    text-decoration: underline;
+}
+
+.enlace--usuario:hover{
+    color: var(--verdeSuave);
+}
+
+/*  HEADER*/
+
+.header--imagen{
+    width: 25%;
+}
+
+@media (min-width: 768px){
+    .header--imagen{
+        width: 40%;
+    }
+}
+
+.imagen--logo{
+    width: 35%;
+}
+
+.header--titulo{
+    font-weight: 700;
+    font-size: 12rem;
+    letter-spacing: 3px;
+    margin: 2rem;
+    text-shadow:0.5px 0.5px 1px #333;
+}
+
+.header--texto{
+    color: #222;
+    font-size: 2.2rem;
+}
+
+.menu{
+    text-align: right;
+    width: 100%;
+    padding-right: 3rem;
+    padding-top: 2rem;
+}
+
+.menu--none{
+    display: block;
+}
+
+@media (min-width: 1024px){
+    .menu--none{
+        display: none;
+    }
+}
+
+/* FOOTER*/
+.footer{
+    padding: .2rem;
+    background-color: var(--gris);
+    color: var(--negro);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.enlace__footer{
+    color: var(--negro);
+    text-decoration: underline;
+}
+.enlace__footer:hover{
+    color: var(--verde);
+}
+
+/* MAIN*/
+
+.titulo{
+    background-color: var(--verdeSuave);
+    padding: 1rem;
+}
+
+.titulo--inicio{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-weight: 400;
+}
+
+@media (min-width: 768px){
+    .contenedor--grid{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .contenedor--grid{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+}
+
+.contenedor__bloque{
+    text-align: center;
+    padding: 2rem;
+    transition: .3s;
+}
+
+
+.contenedor__bloque:hover{
+    border: none;
+}
+
+.contenedor__imagen{
+    width: 100%;
+}
+
+.imagen--proceso{
+    height: 25rem;
+}
+
+.contenedor__titulo{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--negro);
+}
+
+.contenedor__enlace{
+    font-size: 1.5rem;
+    color: var(--negro);
+    text-decoration: underline;
+}
+
+.asisTecnica{
+    background-color: var(--grisclaro);
+    padding: 2rem;
+}
+
+@media (min-width: 768px){
+    .asisTecnica{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: var(--grisclaro);
+        padding: 2rem;
+    }
+}
+
+.asisTitulo{
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.asistente{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.nomAsistente{
+    font-size: 2rem;
+}
+
+.encuentranos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--grisclaro);
+    padding: 2rem;
+}
+
+@media (min-width: 768px){
+    .encuentranos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: var(--grisclaro);
+        padding: 2rem;
+    }
+}
+
+.encuentranos--informacion{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.encuentranos--enlace{
+    color: var(--negro);
+}
+
+.encuentranos--enlace:hover{
+    color: var(--verde);
+}
+
+.oficinaBarranquilla{
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px){   
+    .nuestrasOficinas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+}
+
+.video{
+    background-color: var(--verde);
+    padding: 2rem;
+}
+
+/* CONOCENOS*/
+
+/* HEADER CONOCENOS*/
+
+.header--conocenos{
+    background-image: url('../imagenes/Contactamos16.JPG');
+}
+
+.flex--conocenos{
+    background-color: rgba( 0, 0, 0, .6);
+}
+
+.header--titulo-conocenos{
+    font-size: 5rem;
+    font-weight: 100;
+    color: var(--blanco);
+    letter-spacing: .5rem;
+}
+
+.titulo--conocenos{
+    text-align: center;
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+
+.grid--conocenos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+
+.contenedor__texto--contactamos{
+    text-align: left;
+}
+
+.contenedor__titulo--conocenos{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--verde);
+}
+
+.eliminar{
+    font-size: 2rem;
+    color: var(--verde);
+}
+
+.contenedor--texto--conocenos{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.contenedor--lista{
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.contenedor--lista--conocenos{
+    margin-bottom: 1rem;
+}
+
+.contenedor__bloque--conocenos{
+    padding: 2rem;
+    border-bottom: 1px solid var(--gris);
+}
+
+.contenedor__bloque--conocenos:last-of-type{
+   border: none;
+}
+
+
+/*SELECCION */
+.header--seleccion{
+    background-image: url(../imagenes/seleccion.jpg);
+}
+
+@media (min-width: 768px){
+    .contenedor__grid--seleccion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+}
+
+.contenedor--label{
+    font-size: 1.5rem;
+}
+
+.contenedor--input{
+    padding: .8rem;
+    margin-left: 1rem;
+}
+
+.contenedor__form--seleccion{
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+@media (min-width: 768px){
+    .contenedor__form--seleccion{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        background-color: var(--blanco);
+        padding: 2rem;
+        border-radius: .5rem;
+    }    
+}
+
+.tituloSeleccion{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.auto{
+    overflow: auto;
+    height: 100vh;
+}
+
+@media (min-width: 768px){
+    .auto{
+        height: 85vh;
+    }
+}
+
+.contenedor--lista--seleccion{
+    margin-bottom: 2rem;
+}
+
+.flexEliminar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tituloCrud{
+    color: var(--verde);
+    font-weight: 700;
+    line-height: 1;
+    font-size: 2rem;
+}
+
+
+/* ENTREVISTA */
+.entrevista{
+    grid-column: 1/3;
+}
+
+.form--entrevista{
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
+
+.form--inicioLabor{
+    grid-row: 5/6;
+    grid-column: 3/5;
+}
+
+
+.texto--entrevista{
+    color: var(--negro);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px){
+    .flexEntrevista{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .flexLabor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+/* LABOR */
+
+.inicioLabor{
+    grid-column: 3/5; 
+}
+
+.tiempoLabor{
+    grid-column: 3/5;
+}
+
+/* REQUISITOS ESPECIFICOS */
+.form--requisito{
+    grid-column: 1/5;
+}
+
+.estudio{
+    grid-column: 1/3;
+}
+
+.funciones{
+    grid-column: 3/5;
+}
+
+.comentarios{
+    grid-column: 1/5;
+}
+
+.botonCentro{
+    grid-column: 1/5;
+    width: 100%;
+    text-align: right;
+}
+
+/*CONTACTO */
+.contacto--imagen{
+    height: 40rem;
+    width: 30rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.contacto--texto{
+    font-size: 1.5rem;
+}
+
+.crud{
+    overflow-x:auto;
+}
+
+.botonSeleccion{
+    text-align: right;
+    padding: 2rem;
+}
+
+/*  INGRESO*/
+.header--ingreso{
+    background-image: url('../imagenes/ingreso.jpg');
+}
+
+/*  NOMINA*/
+.header--nomina{
+    background-image: url('../imagenes/nomina.jpg');
+}
+
+/*  RETIRO*/
+.header--retiro{
+    background-image: url('../imagenes/retiro.jpg');
+}
+
+/*  SEGURIDAD*/
+.header--seguridad{
+    background-image: url('../imagenes/seguridad.jpg');
+}
+
+.contenedor__form{
+    gap: 2rem;
+}
+
+@media (min-width: 768px){
+    .contenedor__form{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        background-color: var(--verdeclaro);
+        padding: 2rem;
+        border-radius: .5rem;
+    }
+}
+
+.form--none{
+    display: none;
+}
+
+.cerrar,
+.cerrar--talento{
+    grid-column: 1/5;
+    text-align: right;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form--titulo{
+    grid-column: 1/5;
+}
+
+
+.form--flex{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form--label{
+    color: var(--negro);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.form--input{
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.form--input--w50{
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #f1f1f1;
+    width: 50%;
+}
+
+.flex--seguridad{
+    display: flex;
+    gap: 2rem;
+}
+
+.radio{
+    margin-top: 1.2rem;
+}
+
+.opcionradio{
+    font-size: 1.5rem;
+}
+
+/* .form--boton{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+} */
+
+.contenedor__instruccion{
+    grid-column: 1/5;
+}
+
+.boton{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: var(--verde);
+    color: var(--blanco);
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.span--verde{
+    color: var(--verde);
+    font-weight: 700;
+}
+
+.formulario{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(15,15,15,0.4);
+}
+
+.boton-si{
+    margin: .5rem;
+}
+
+.boton-no{
+    margin: .5rem;
+}
+
+@media (min-width: 768px){
+    .boton-si{
+        margin: 3rem;
+    }
+
+    .boton-no{
+        margin: 3rem;
+    }
+}
+
+.form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 768px){
+    .form{
+        position: fixed;
+        top: 45px;
+        left: 45px;
+        right: 45px;
+        bottom: 45px;
+    }
+}
+
+.formEliminar{
+    position: fixed;
+    top: 5rem;
+    left: 1rem;
+    right: 1rem;
+}
+
+@media (min-width: 768px){
+    .formEliminar{
+        position: fixed;
+        top: 45px;
+        left: 15rem;
+        right: 15rem;
+    }
+}
+
+/*  TALENTO HUMANO*/
+.header--talento{
+    background-image: url('../imagenes/talentohumano.jpg');
+}
+
+.contenedor__titulo--talento{
+    font-size: 2rem;
+    color: var(--verde);
+}
+
+.contenedor__form--talento{
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--blanco);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    box-shadow: 1px 1px 2px #333;
+}
+
+.contenedor__form--buzon{
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    background-color: var(--gris);
+}
+
+@media (min-width: 1024px){
+    .contenedor__form--talento,
+    .contenedor__form--buzon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        background-color: var(--blanco);
+        padding: 2rem;
+    }
+    .contenedor__form--buzon{
+        background-color: var(--gris);
+    }
+}
+
+.tituloSeleccion{
+    font-size: 1.2rem;
+}
+
+.cerrar{
+    grid-column: 3/5;
+}
+
+.archivo{
+    background-color: var(--blanco);
+}
+
+.buscar{
+    padding: 1rem;
+    width: 30%;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #f1f1f1;
+}
+
+/* TALENTO HUMANO*/
+
+.contenedor__form--talento{
+    border-radius: .5rem;
+}
+
+.convenio{
+    grid-column: 1/4;
+}
+
+.tituloOficina{
+    grid-column: 1/3;
+}
+
+.titulo--oficina{
+    color: var(--negro);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1024px){
+    .contenedor__grid--talento{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .contenedor--talento{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.cerrar--talento{
+    grid-column: 1/3;
+}
+
+.form--talento{
+    grid-row: 6/7;
+    grid-column: 1/5;
+}
+
+/*  BUZÓN*/
+.header--buzon{
+    background-image: url('../imagenes/buzondecontacto.jpg');
+}
+
+.enviar--buzon{
+    grid-column: 3/4;
+}
+
+.form--solicitud{
+    grid-row: 2/3;
+    grid-column: 1/4;
+} 
