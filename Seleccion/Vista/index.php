@@ -27,7 +27,7 @@
         <div class="contenedor--header">
             <div class="flex--conocenos">
                 <div class="menu menu--none">
-                    <a href="Javascript:void()" onclick="abrirNav()"> <i class="fa fa-navicon icono"></i> </a>
+                    <a href="Javascript:void()" onclick="abrirNav('')"> <i class="fa fa-navicon icono"></i> </a>
                 </div>
 
                 <div class="contenedor--flex">
@@ -191,7 +191,6 @@
                 </div> <!-- .contenedor__texto--contactamos-->
 
                 
-
                 <div id="flotanteSeleccion" class="contenedor__bloque--conocenos form--none" >
                     <div onclick="this.parentNode.style.display='none'" class="formulario"></div>
 
