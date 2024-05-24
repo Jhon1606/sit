@@ -1,16 +1,15 @@
 <?php
-    require_once("../../Departamento/Modelo/departamento.php");
-    
-    $ModeloDepartamentos = new departamento();
-    $InformacionDepartamentos = $ModeloDepartamentos->get();
+require_once("../../Departamento/Modelo/departamento.php");
+
+$ModeloDepartamentos = new departamento();
+$InformacionDepartamentos = $ModeloDepartamentos->get();
 ?>
 
-<form action="../Controlador/add.php" method="POST" >
+<form action="../Controlador/add.php" method="POST">
     <div class="contenedor__form--seleccion auto">
-        
+
         <div class="cerrar">
-            <p onclick="document.getElementById('flotanteSeleccion').style.display='none'" 
-            class="cerrar--talento" title="Cerrar">
+            <p onclick="document.getElementById('flotanteSeleccion').style.display='none'" class="cerrar--talento" title="Cerrar">
                 <i class="fa fa-close"></i>
             </p>
         </div>
@@ -18,17 +17,16 @@
         <div class="tituloSeleccion">
             <h2 class="tituloCrud"><i class="fas fa-user-check"></i>Requisición de Personal</h2>
         </div>
-        
+
         <div class="form--titulo">
             <h2 class="contenedor__titulo--conocenos center">Información básica de la solicitud</h2>
         </div>
 
         <div class="form--flex">
             <label class="form--label" for="cargo">Cargo Solicitado</label>
-            <input type="text" class="form--input" name="cargo" placeholder="Cargo solicitado..."
-            onChange="this.value=(this.value).toUpperCase()" style="text-transform:uppercase" required="">
+            <input type="text" class="form--input" name="cargo" placeholder="Cargo solicitado..." onChange="this.value=(this.value).toUpperCase()" style="text-transform:uppercase" required="">
         </div>
-        
+
         <div class="form--flex">
             <label class="form--label" for="cantidad">Cantidad requerida</label>
             <input type="number" class="form--input" name="cantidad" placeholder="Cantidad..." required="">
@@ -62,18 +60,17 @@
             <select name="motivo" class="form--input" required="">
                 <option>Seleccione una opción</option>
                 <option>Labores ocasionales, accidentales o transitorias</option>
-                <option>Reemplazo de personal en vacaciones, en uso de licencia, 
+                <option>Reemplazo de personal en vacaciones, en uso de licencia,
                     en incapacidad por enfermedad o maternidad</option>
-                <option>Atender incrementos en la producción, el transporte, las ventas 
-                    de productos o mercancías, los periodos estacionales de cosechas y 
+                <option>Atender incrementos en la producción, el transporte, las ventas
+                    de productos o mercancías, los periodos estacionales de cosechas y
                     en la prestación de servicios</option>
             </select>
         </div>
 
         <div class="form--flex">
             <label class="form--label" for="nombrelabor">Nombre de la obra o labor (Estimado)</label>
-            <textarea name="nombrelabor" class="form--input" placeholder="Especifique el nombre de la obra o labor..."
-            onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
+            <textarea name="nombrelabor" class="form--input" placeholder="Especifique el nombre de la obra o labor..." onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
         </div>
 
         <div class="form--flex">
@@ -82,12 +79,12 @@
         </div>
 
         <!-- ENTREVISTA CON EL CLIENTE -->
-        
+
         <div class="form--entrevista">
             <p class="texto--entrevista center">Entrevista con el cliente (Tentativo)</p>
         </div>
-        
-        
+
+
         <div class="form--flex fecha">
             <label class="form--label" for="fechae">Fecha</label>
             <input type="date" name="fechae" class="form--input" required="">
@@ -97,14 +94,14 @@
             <label class="form--label" for="horae">Hora</label>
             <input type="time" name="horae" class="form--input">
         </div>
-    
-            <!-- INICIO DE LABOR -->
-        
+
+        <!-- INICIO DE LABOR -->
+
         <div class="form--inicioLabor">
             <p class="texto--entrevista center">Inicio de Labor (Tentativo)</p>
         </div>
-            
-            
+
+
         <div class="form--flex">
             <label class="form--label" for="fechal">Fecha</label>
             <input type="date" name="fechal" class="form--input" required="">
@@ -113,7 +110,7 @@
         <div class="form--flex">
             <label class="form--label" for="horal">Hora</label>
             <input type="time" name="horal" class="form--input">
-        </div> 
+        </div>
 
 
         <!-- PERFIL DE CARGO -->
@@ -131,11 +128,10 @@
                 <option>Indiferente</option>
             </select>
         </div>
-        
+
         <div class="form--flex">
             <label class="form--label" for="tiempolaboral">Tiempo de experiencia laboral</label>
-            <textarea name="tiempolaboral" class="form--input" placeholder="Tiempo requerido en cargos similares..."
-            onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase"></textarea>
+            <textarea name="tiempolaboral" class="form--input" placeholder="Tiempo requerido en cargos similares..." onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase"></textarea>
         </div>
 
         <div class="form--flex">
@@ -201,20 +197,18 @@
 
         <div class="form--flex estudio">
             <label class="form--label" for="estudios">Estudios</label>
-            <textarea class="form--input" name="estudios"
-            onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
+            <textarea class="form--input" name="estudios" onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
         </div>
 
         <div class="form--flex funciones">
             <label class="form--label" for="funciones">Funciones del cargo</label>
-            <textarea class="form--input" name="funciones"
-            onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
+            <textarea class="form--input" name="funciones" onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
         </div>
 
         <div class="form--titulo">
             <h2 class="contenedor__titulo--conocenos center">Condiciones del puesto de trabajo</h2>
         </div>
-        
+
         <div class="form--flex">
             <label class="form--label" for="departamento">Departamento</label>
             <select name="departamento" class="form--input" onchange="cargarMunicipiosCrear(this.value, '')">
@@ -228,33 +222,32 @@
                 ?>
             </select>
             <script>
-
-                function cargarMunicipiosCrear(idDepartamento, idMunicipio)
-                {
+                function cargarMunicipiosCrear(idDepartamento, idMunicipio) {
                     $.ajax({
                         url: "../../General/Queries/filtromunicipio.php",
                         type: "POST",
                         dataType: "HTML",
-                        data: {idDepartamento: idDepartamento, idMunicipio: idMunicipio},
-                        success: function(selectMunipicios){
+                        data: {
+                            idDepartamento: idDepartamento,
+                            idMunicipio: idMunicipio
+                        },
+                        success: function(selectMunipicios) {
 
                             document.getElementById("divMunicipioCrear").innerHTML = selectMunipicios;
 
                         }
                     });
                 }
-
             </script>
         </div>
 
         <div class="form--flex" id="divMunicipioCrear">
-            
+
         </div>
 
         <div class="form--flex">
             <label class="form--label" for="direccion">Dirección</label>
-            <textarea class="form--input" name="direccion" placeholder="Dirección del sitio de trabajo..."
-            onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
+            <textarea class="form--input" name="direccion" placeholder="Dirección del sitio de trabajo..." onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase" required=""></textarea>
         </div>
 
         <div class="form--flex">
@@ -295,12 +288,11 @@
 
         <div class="form--flex comentarios">
             <label class="form--label" for="comentarios">Comentarios adicionales</label>
-            <textarea class="form--input" name="comentarios" placeholder="Escriba cualquier comentario u observación adicional si aplica..."
-            onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase"></textarea>
+            <textarea class="form--input" name="comentarios" placeholder="Escriba cualquier comentario u observación adicional si aplica..." onChange="this.value=(this.value).toLowerCase()" style="text-transform:lowercase"></textarea>
         </div>
 
         <div class="form--titulo botonSeleccion">
             <input class="boton" type="submit" value="Enviar">
-        </div> 
+        </div>
     </div> <!-- .contenedor__form--talento-->
 </form>

@@ -1,13 +1,14 @@
 <?php
-    require_once('../Modelo/ingreso.php');
-    require_once('../../General/Helpers/helpers.php');
+require_once('../Modelo/ingreso.php');
+require_once('../../General/Helpers/helpers.php');
 
-    $modeloIngreso = new ingreso();
-    $ingresos = $modeloIngreso->get();
+$modeloIngreso = new ingreso();
+$ingresos = $modeloIngreso->get();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,8 +22,9 @@
     <script src="https://kit.fontawesome.com/768de8c2f5.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="noopener"></script>
 </head>
+
 <body>
-    
+
     <header class="header--ingreso">
         <div class="contenedor--header">
             <div class="flex--conocenos">
@@ -34,12 +36,12 @@
                     <a href="">
                         <img class="header--imagen" src="../../Public/imagenes/logoContactamos3.png" alt="">
                     </a>
-                </div>  
+                </div>
 
                 <div class="contenedor--texto">
                     <h1 class="header--titulo-conocenos">Ingreso de Personal</h1>
-                    <p class="header--texto--blanco w100 center">Es el proceso mediante el cual se contrata al personal 
-                        seleccionado por nuestros clientes, aplicando las validaciones y controles legales y definidos en el 
+                    <p class="header--texto--blanco w100 center">Es el proceso mediante el cual se contrata al personal
+                        seleccionado por nuestros clientes, aplicando las validaciones y controles legales y definidos en el
                         acuerdo de servicio.</p>
                 </div>
             </div>
@@ -65,9 +67,9 @@
             <a class="navegacion__enlace" href="../../Trabajador/Vista/index.php"><i class="fa fa-user"></i> Trabajadores</a>
             <a class="navegacion__enlace" href="../../Usuarios/Vista/index.php"><i class="fa fa-user"></i> Usuarios</a>
         </nav>
-   
+
     </div>
-    
+
 
 
     <section>
@@ -92,7 +94,7 @@
                             <p class="contacto--texto"><i class='fa fa-envelope-open'></i> <b>E-mail:</b> contratacionbq@contactamos.com.co </p>
                         </div>
                     </div>
-                    
+
                     <div class="contacto center">
                         <div>
                             <img class="contacto--imagen center" src="../../Public/imagenes/Personal/katherineRomo.jpg" alt="">
@@ -108,7 +110,7 @@
                         </div>
                     </div> <!-- .contacto-->
                 </div> <!-- .contenedor__grid--seleccion-->
-            </div> <!--.contenedor__bloque--conocenos--> 
+            </div> <!--.contenedor__bloque--conocenos-->
         </main>
     </section>
 
@@ -120,24 +122,24 @@
         <main class="contenedor">
             <div class="contenedor__bloque--conocenos">
                 <div class="contenedor__texto--contactamos">
-                     <p class="contenedor--texto--conocenos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce 
-                        pretium vel ante vel egestas. Vestibulum semper maximus dolor, 
-                        vehicula fermentum nulla tempor ut. Sed nec lectus non nisi 
-                        ultrices placerat sit amet quis justo. Ut hendrerit vehicula 
-                        vehicula. Morbi pellentesque risus quis quam consectetur faucibus. 
-                        Curabitur auctor ex sed metus ultrices sodales. Fusce tempor tellus 
-                        ac nulla iaculis, in eleifend elit posuere. Pellentesque sed interdum 
-                        leo, nec pharetra risus. Quisque dapibus quam nisi. Donec hendrerit 
-                        laoreet mi, aliquet efficitur arcu placerat ullamcorper. Donec at 
+                    <p class="contenedor--texto--conocenos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                        pretium vel ante vel egestas. Vestibulum semper maximus dolor,
+                        vehicula fermentum nulla tempor ut. Sed nec lectus non nisi
+                        ultrices placerat sit amet quis justo. Ut hendrerit vehicula
+                        vehicula. Morbi pellentesque risus quis quam consectetur faucibus.
+                        Curabitur auctor ex sed metus ultrices sodales. Fusce tempor tellus
+                        ac nulla iaculis, in eleifend elit posuere. Pellentesque sed interdum
+                        leo, nec pharetra risus. Quisque dapibus quam nisi. Donec hendrerit
+                        laoreet mi, aliquet efficitur arcu placerat ullamcorper. Donec at
                         risus viverra, interdum nisi eget, tempus lorem. Maecenas vitae massa dolor.</p>
-                        
-                     <p class="contenedor--texto--conocenos">Vestibulum eget fermentum libero. Nulla rhoncus orci eget ipsum imperdiet, 
-                        vel malesuada mi ultrices. Duis at eleifend risus. Sed eu ipsum in justo 
-                        aliquam ullamcorper. Maecenas dignissim nisi quis finibus vulputate. 
-                        Duis molestie fringilla eros, a iaculis velit iaculis vel. Mauris ante 
-                        felis, semper nec ullamcorper vitae, imperdiet ut risus. Pellentesque 
-                        vitae scelerisque mauris, a pharetra enim. Proin urna massa, blandit 
-                        in mollis a, ullamcorper in dolor. Nulla blandit tellus vitae ullamcorper 
+
+                    <p class="contenedor--texto--conocenos">Vestibulum eget fermentum libero. Nulla rhoncus orci eget ipsum imperdiet,
+                        vel malesuada mi ultrices. Duis at eleifend risus. Sed eu ipsum in justo
+                        aliquam ullamcorper. Maecenas dignissim nisi quis finibus vulputate.
+                        Duis molestie fringilla eros, a iaculis velit iaculis vel. Mauris ante
+                        felis, semper nec ullamcorper vitae, imperdiet ut risus. Pellentesque
+                        vitae scelerisque mauris, a pharetra enim. Proin urna massa, blandit
+                        in mollis a, ullamcorper in dolor. Nulla blandit tellus vitae ullamcorper
                         placerat. Quisque fermentum porttitor eros ac vehicula.</p>
                 </div>
             </div>
@@ -153,7 +155,7 @@
             <div class="contenedor__bloque--conocenos">
                 <div class="contenedor__texto--contactamos">
                     <input type="search" placeholder="Buscar..." class="buscar" onchange="filtrar(this.value)" value="">
-                    
+
                     <a href="Javascript:void()" onclick="abrirFlotante('Ingreso')"><i class="fa fa-plus iconoGris"></i></a>
                     <div class="crud">
                         <table class="tabla">
@@ -165,37 +167,37 @@
                                     <th class="anchoa">Acciones</th>
                                 </tr>
                             </thead>
-              
+
                             <tbody>
-                            <?php         
-                                if($ingresos != null){ 
-                                    foreach($ingresos as $ingreso){
-                            ?>
-                                <tr class="fila">
-                                    <td><?php echo $ingreso['id_ingreso']; ?></td>
-                                    <td class="center"><?php echo formatDate($ingreso['fechai']); ?></td>
-                                    <td><?php echo $ingreso['cargo']; ?></td>
-                                    <td class="center">
-                                        <a href="Javascript:void()" onclick="abrirFlotanteEditarIngreso(<?php echo $ingreso['id_ingreso']; ?>)" class="link" title="Editar"><i class="fa fa-pencil color"></i></a>
-                                        <a href="Javascript:void()" onclick="abrirFlotanteEliminar(<?php echo $ingreso['id_ingreso']; ?>)" class="link" title="Eliminar"><i class="fas fa-trash-alt color"></i></a>
-                                    </td>
-                                </tr>
-                            <?php
+                                <?php
+                                if ($ingresos != null) {
+                                    foreach ($ingresos as $ingreso) {
+                                ?>
+                                        <tr class="fila">
+                                            <td><?php echo $ingreso['id_ingreso']; ?></td>
+                                            <td class="center"><?php echo formatDate($ingreso['fechai']); ?></td>
+                                            <td><?php echo $ingreso['cargo']; ?></td>
+                                            <td class="center">
+                                                <a href="Javascript:void()" onclick="abrirFlotanteEditarIngreso(<?php echo $ingreso['id_ingreso']; ?>)" class="link" title="Editar"><i class="fa fa-pencil color"></i></a>
+                                                <a href="Javascript:void()" onclick="abrirFlotanteEliminar(<?php echo $ingreso['id_ingreso']; ?>)" class="link" title="Eliminar"><i class="fas fa-trash-alt color"></i></a>
+                                            </td>
+                                        </tr>
+                                <?php
+                                    }
                                 }
-                            }
-                            ?>
+                                ?>
                             </tbody>
                         </table>
                     </div>
                 </div> <!-- .contenedor__texto--contactamos-->
 
-        
-                <div id="flotanteIngreso" class="contenedor__bloque--conocenos form--none" >
+
+                <div id="flotanteIngreso" class="contenedor__bloque--conocenos form--none">
                     <div onclick="this.parentNode.style.display='none'" class="formulario"></div>
 
                     <div class="form">
-                       <?php
-                            require_once('add.php');
+                        <?php
+                        require_once('add.php');
                         ?>
                     </div> <!-- .form-->
                 </div> <!-- .contenedor__bloque--conocenos formulario-->
@@ -203,24 +205,24 @@
 
                 <!-- EDITAR -->
 
-                <div id="flotanteEditarIngreso" class="contenedor__bloque--conocenos form--none" >
+                <div id="flotanteEditarIngreso" class="contenedor__bloque--conocenos form--none">
                     <div onclick="this.parentNode.style.display='none'" class="formulario"></div>
 
                     <div class="form">
                         <?php
-                            require_once('edit.php');
+                        require_once('edit.php');
                         ?>
                     </div> <!-- .form-->
                 </div> <!-- .contenedor__bloque--conocenos formulario-->
 
                 <!-- ELIMINAR -->
 
-                <div id="flotanteEliminar" class="contenedor__bloque--conocenos form--none" >
+                <div id="flotanteEliminar" class="contenedor__bloque--conocenos form--none">
                     <div onclick="this.parentNode.style.display='none'" class="formulario"></div>
 
                     <div class="formEliminar">
                         <?php
-                            require_once('delete.php');
+                        require_once('delete.php');
                         ?>
                     </div> <!-- .form-->
                 </div> <!-- .contenedor__bloque--conocenos formulario-->
@@ -240,7 +242,7 @@
                 <p><i class='fa fa-mobile'></i>301 2713798</p>
                 <p><i class='fas fa-phone-alt'></i>3776363 Ext. 111</p>
             </div>
-            
+
             <div class="asistente">
                 <p class="nomAsistente"><b>Luis Rodriguez</b></p>
                 <p><i class='fa fa-envelope-open'></i>comunicaciones@contactamos.com.co</p>
@@ -256,4 +258,5 @@
 
     <script src="../../Public/js/javascript.js"></script>
 </body>
+
 </html>
